@@ -43,6 +43,7 @@ public class ExpenseController {
         return ResponseEntity.ok(balances);
     }
 
+    //get simplifed balance between user
     @PostMapping("/simplify")
     public ResponseEntity<String> simplifyBalances() {
         expenseService.simplifyBalances();
